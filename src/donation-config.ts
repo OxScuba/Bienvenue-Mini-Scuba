@@ -1,10 +1,6 @@
 export const donationConfig = {
-  // Ajoute uniquement des adresses publiques destinées aux dons.
-  bitcoinAddress: "",
-  lightningAddress: "",
-
-  // Dépose ensuite les deux images dans public/assets/qr/.
-  // Exemple : "./assets/qr/bitcoin.webp"
-  bitcoinQr: "",
-  lightningQr: "",
+  bitcoinAddress: "bc1qr2fyxnfpmr8tnwpey8nys57wl6wucdllnm5vgm",
+  lightningAddress: "Scuba_Wizard@getalby.com",
+  bitcoinQr: "./assets/qr/bitcoin.webp",
+  lightningQr: "./assets/qr/lightning.webp",
 };
