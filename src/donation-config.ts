@@ -3,4 +3,10 @@ export const donationConfig = {
   lightningAddress: "Scuba_Wizard@getalby.com",
   bitcoinQr: "./assets/qr/bitcoin.webp",
   lightningQr: "./assets/qr/lightning.webp",
+
+  // À compléter après la naissance. Laisser vide jusque-là.
+  birthBlockHeight: "",
+  birthTransactionId: "",
+  birthTransactionUrl: "",
+  birthOpReturnMessage: "",
 };
