@@ -868,3 +868,127 @@ footer a {
     transform: none;
   }
 }
+/* =========================================================
+   IMAGES — CONSERVATION DU RATIO ORIGINAL
+   ========================================================= */
+
+img {
+  height: auto;
+}
+
+/* Illustrations insérées dans les sections */
+.story-image,
+.why-image {
+  width: 100%;
+  height: auto;
+  align-self: start;
+}
+
+.story-image img,
+.why-image img,
+.intro-portrait img,
+.qr-image {
+  width: 100%;
+  height: auto !important;
+  object-fit: contain;
+}
+
+/* Affichage mobile sans étirement, zoom ni recadrage */
+@media (max-width: 680px) {
+  /*
+   * L’image principale devient une vraie illustration horizontale.
+   * Le texte passe en dessous au lieu d’être superposé.
+   */
+  .hero {
+    display: flex;
+    min-height: 0;
+    padding-top: 4.9rem;
+    flex-direction: column;
+    align-items: stretch;
+    background: var(--ocean-deep);
+  }
+
+  .hero-background {
+    position: relative;
+    inset: auto;
+    order: 1;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    object-position: center;
+  }
+
+  .hero-shade {
+    display: none;
+  }
+
+  .hero-content {
+    order: 2;
+    width: 100%;
+    padding: 2.5rem 1.1rem 3.5rem;
+    background:
+      radial-gradient(
+        circle at 85% 10%,
+        rgba(247, 147, 26, 0.18),
+        transparent 18rem
+      ),
+      var(--ocean-deep);
+  }
+
+  .hero-note {
+    display: none;
+  }
+
+  /*
+   * Les illustrations narratives conservent leur ratio 1600 × 995.
+   */
+  .story-image,
+  .why-image {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    margin-inline: auto;
+    transform: none;
+  }
+
+  .story-image img,
+  .why-image img {
+    width: 100%;
+    height: auto !important;
+    aspect-ratio: auto;
+    object-fit: contain;
+  }
+
+  /*
+   * L’illustration finale est également affichée en entier.
+   * Le texte apparaît ensuite dans son propre bloc.
+   */
+  .horizon {
+    display: flex;
+    min-height: 0;
+    padding: 0;
+    flex-direction: column;
+    align-items: stretch;
+    background: var(--ocean-deep);
+  }
+
+  .horizon-background {
+    position: relative;
+    inset: auto;
+    order: 1;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    object-position: center;
+  }
+
+  .horizon-shade {
+    display: none;
+  }
+
+  .horizon-copy {
+    order: 2;
+    width: 100%;
+    padding: 3.5rem 1.1rem 4rem;
+  }
+}
