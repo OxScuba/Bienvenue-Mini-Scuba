@@ -92,7 +92,7 @@ export const translations = {
     birth: {
       eyebrow: "Preuve de naissance",
       title: "Sa naissance, inscrite dans la Timechain.",
-      text: "À sa naissance, une transaction Bitcoin contenant un message OP_RETURN viendra ancrer cet instant dans un bloc. Les références apparaîtront ici dès qu’elles seront connues.",
+      text: "Le jour de sa naissance, nous avons inscrit quelques mots pour Enora dans la Timechain Bitcoin. Un message de ses parents, ancré dans un bloc pour traverser le temps.",
       block: "Numéro de bloc",
       transaction: "Transaction de naissance",
       message: "Message OP_RETURN",
@@ -208,7 +208,7 @@ export const translations = {
     birth: {
       eyebrow: "Proof of birth",
       title: "Their birth, written into the Timechain.",
-      text: "At birth, a Bitcoin transaction containing an OP_RETURN message will anchor this moment in a block. Its references will appear here as soon as they are known.",
+      text: "On the day she was born, we inscribed a few words for Enora into the Bitcoin Timechain—a message from her parents, anchored in a block to travel through time.",
       block: "Block height",
       transaction: "Birth transaction",
       message: "OP_RETURN message",
